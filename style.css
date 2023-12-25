@@ -125,19 +125,36 @@ span{
     justify-content: center;
 }
 
+@media(min-width:900px) and (max-width: 1070px){
+
+    body{
+        display: block;
+        
+    }
+
+    .leftpart>p{
+        width: 400px;
+        height: 55px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+}
+
 @media(max-width:900px){
 
     .container{
         display:flex;
         flex-direction: column;
     }
+    
     .leftpart{
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .leftpart>p{
         width: 400px;
         height: 55px;
@@ -149,3 +166,4 @@ span{
         margin-top: -50px;
     }
 }
+
