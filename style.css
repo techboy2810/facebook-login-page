@@ -1,0 +1,151 @@
+*{
+    margin:0px;
+    padding:0px;
+} 
+body{
+    height:100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f2f5;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 20px;
+    display: flex;
+    gap:80px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftpart{
+    width: 60%;
+}
+
+.logo{
+    height: 110px;
+    margin: -14px;
+}
+h1{
+    color: #1877f2;
+    font-size: 80px;
+}
+.leftpart>p{
+    color: black;
+    font-size: 28px;
+    line-height: 32px;
+    width: 500px;
+}
+
+.rightpart{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 450px;
+    height:370px;
+    border-radius: 15px;;
+    box-shadow: -10px -10px 15px rgba(0,0,0,0.1),
+    10px 10px 15px rgba(0,0,0,0.1);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px ;
+}
+
+input{
+    width: 380px;
+    height: 50px;
+    margin: 10px;
+    padding: 0px 10px;
+    border: 1px solid #ccc;
+    /* outline: none; */
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+
+.log{
+    width: 400px;
+    height: 50px;
+    margin: 10px;
+    padding: 0px 10px;
+    border: 1px solid #ccc;
+    background-color:#1877f2;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.forgot{
+    color: #1877f2;
+    padding-bottom: 10px ;
+    font-size: 17px;
+}
+
+hr{
+    border: 1px solid #ccc;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.createaccount{
+    width: 220px;
+    height: 50px;
+    background-color: #42b72a;
+    border: 0px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+span{
+    width: 400px;
+    padding: 25px 0px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:900px){
+
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+    .leftpart{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .leftpart>p{
+        width: 400px;
+        height: 55px;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .rightpart{
+        margin-top: -50px;
+    }
+}
